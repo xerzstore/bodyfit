@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="BODYFIT - Kenali pertumbuhan dan indikator kesehatan tubuhmu.">
+
+  <title>BODYFIT - Kenali Tubuhmu</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">BODY<span>FIT.</span></a>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">
+        ☀️
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <span class="hero-label">BODY HEALTH CALCULATOR</span>
+
+      <h1>
+        Kenali Tubuhmu,<br>
+        <span>Pahami Kesehatanmu.</span>
+      </h1>
+
+      <p>
+        Masukkan data tubuhmu dan dapatkan informasi
+        mengenai indikator pertumbuhan dan kesehatan.
+      </p>
+    </section>
+
+    <section class="calculator container">
+
+      <div class="section-heading">
+        <h2>Kalkulator Tubuh</h2>
+        <p>Lengkapi informasi berikut.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender">
+          <option value="male">Laki-laki</option>
+          <option value="female">Perempuan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Usia (tahun)</label>
+        <input
+          type="number"
+          id="age"
+          min="2"
+          max="120"
+          placeholder="Masukkan usia"
+        >
+      </div>
+
+      <div class="form-group">
+        <div class="range-heading">
+          <label for="height">Tinggi Badan</label>
+          <span id="heightValue">170 cm</span>
+        </div>
+
+        <input
+          type="range"
+          id="height"
+          min="80"
+          max="220"
+          value="170"
+        >
+      </div>
+
+      <div class="form-group">
+        <div class="range-heading">
+          <label for="weight">Berat Badan</label>
+          <span id="weightValue">60 kg</span>
+        </div>
+
+        <input
+          type="range"
+          id="weight"
+          min="10"
+          max="200"
+          value="60"
+        >
+      </div>
+
+      <button id="calculateBtn" class="calculate-btn">
+        Hitung Sekarang
+      </button>
+
+      <div id="result" class="result" aria-live="polite">
+        <h3>Hasil Pengukuran</h3>
+        <p>Lengkapi data, lalu tekan tombol hitung.</p>
+      </div>
+
+      <p class="disclaimer">
+        Hasil merupakan informasi awal, bukan diagnosis medis.
+        Penilaian pertumbuhan anak dan remaja memerlukan
+        acuan khusus berdasarkan usia dan jenis kelamin.
+      </p>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 BODYFIT. Kenali tubuh, pahami kesehatan.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
